@@ -1,0 +1,15 @@
+C:\Users\Twifu\source\repos\TestTask\bin\Debug\net6.0\TestTask.exe
+C:\Users\Twifu\source\repos\TestTask\bin\Debug\net6.0\TestTask.deps.json
+C:\Users\Twifu\source\repos\TestTask\bin\Debug\net6.0\TestTask.runtimeconfig.json
+C:\Users\Twifu\source\repos\TestTask\bin\Debug\net6.0\TestTask.dll
+C:\Users\Twifu\source\repos\TestTask\bin\Debug\net6.0\TestTask.pdb
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.csproj.AssemblyReference.cache
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.AssemblyInfoInputs.cache
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.AssemblyInfo.cs
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.csproj.CoreCompileInputs.cache
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.dll
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\refint\TestTask.dll
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.pdb
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\TestTask.genruntimeconfig.cache
+C:\Users\Twifu\source\repos\TestTask\obj\Debug\net6.0\ref\TestTask.dll
