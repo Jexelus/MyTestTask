@@ -1,4 +1,4 @@
-﻿using System.Text;
+using System.Text;
 using System.Net;
 using System.Text.Json;
 
@@ -12,10 +12,10 @@ class Postreq
             httplink = Sreader.ReadLine();
             httplink = httplink.Remove(0, 6);
         }
-        var url = httplink;
+        string url = httplink;
         var json = JsonSerializer.Serialize(package);
         var wb = new WebClient();
+        Console.WriteLine(url);
         var response = wb.UploadString(url, "POST", json);
-        wb.Dispose();
     }
 }
