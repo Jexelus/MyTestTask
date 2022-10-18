@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Text.Json;
 using System.Net.Http;
 using System.Text;
@@ -10,8 +10,7 @@ void MassPrint(int[] A)
     StringBuilder str = new StringBuilder();
     foreach (int i in A)
     {
-        str.Append(i);
-        str.Append(" ");
+        str.AppendFormat("{0} ", i);
     }
     Console.WriteLine(str);
 }
@@ -23,38 +22,38 @@ List<int> package = new List<int>();
 int[] packageConv;
 
 int elementsCount = rnd.Next(20, 101);
-int temp;
+int tempListElement;
 
 do
 {
-    temp = rnd.Next(-100, 101);
-    if(package.Count == 0)
+    tempListElement = rnd.Next(-100, 101);
+    if (package.Count == 0)
     {
-        package.Add(temp);
+        package.Add(tempListElement);
     }
     else
     {
-        if (package.Contains(temp))
+        if (package.Contains(tempListElement))
         {
             continue;
         }
         else
         {
-            package.Add(temp);
+            package.Add(tempListElement);
         }
     }
 
-}while(package.Count != elementsCount);
+} while (package.Count != elementsCount);
 
 packageConv = package.ToArray();
 MassPrint(packageConv);
 
 int keySortChoise = rnd.Next(1, 3);
 
-switch (keySortChoise) 
+switch (keySortChoise)
 {
     case 1:
-        { 
+        {
             Console.WriteLine("Сортировка методом Хоара");
             Sorting.SortHoara(packageConv, 0, packageConv.Length - 1);
             MassPrint(packageConv);
@@ -63,7 +62,7 @@ switch (keySortChoise)
             break;
         }
     case 2:
-        { 
+        {
             Console.WriteLine("Сортировка методом пузырька");
             packageConv = Sorting.SortBubble(packageConv);
             MassPrint(packageConv);
