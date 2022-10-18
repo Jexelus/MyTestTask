@@ -5,7 +5,7 @@ using System.Text;
 
 Random rnd = new Random();
 
-void MassPrint(int[] A)
+void MassPrint(List<int> A)
 {
     StringBuilder str = new StringBuilder();
     foreach (int i in A)
@@ -16,9 +16,7 @@ void MassPrint(int[] A)
 }
 
 //body
-
-List<int> packageTempList = new List<int>();
-int[] package;
+List<int> package = new List<int>();
 
 int elementsCount = rnd.Next(20, 101);
 int tempListElement;
@@ -26,24 +24,23 @@ int tempListElement;
 do
 {
     tempListElement = rnd.Next(-100, 101);
-    if (packageTempList.Count == 0)
+    if (package.Count == 0)
     {
-        packageTempList.Add(tempListElement);
+        package.Add(tempListElement);
     }
     else
     {
-        if (packageTempList.Contains(tempListElement))
+        if (package.Contains(tempListElement))
         {
             continue;
         }
         else
         {
-            packageTempList.Add(tempListElement);
+            package.Add(tempListElement);
         }
     }
 
-} while (packageTempList.Count != elementsCount);
-package = packageTempList.ToArray();
+} while (package.Count != elementsCount);
 
 MassPrint(package);
 
@@ -54,7 +51,7 @@ switch (keySortChoise)
     case 1:
         {
             Console.WriteLine("Сортировка методом Хоара");
-            Sorting.SortHoara(package, 0, package.Length - 1);
+            Sorting.SortHoara(package, 0, package.Count - 1);
             MassPrint(package);
             Postreq.PostReqGen(package);
             break;
@@ -68,9 +65,3 @@ switch (keySortChoise)
             break;
         }
 }
-
-
-
-
-
-
