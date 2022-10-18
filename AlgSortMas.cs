@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 class Sorting
 {
-    public static int Partition(int[] A, int start, int end)
+    public static int Partition(List<int> A, int start, int end)
     {
         int pivot = A[(start + end) / 2];
         int i = start;
@@ -27,7 +27,7 @@ class Sorting
     }
 
 
-    public static void SortHoara(int[] A, int start, int end)
+    public static void SortHoara(List<int> A, int start, int end)
     {
         if (start < end)
         {
@@ -38,12 +38,12 @@ class Sorting
         }
     }
 
-    public static int[] SortBubble(int[] A)
+    public static List<int> SortBubble(List<int> A)
     {
         int temp = 0;
-        for (int i = 0; i < A.Length; i++)
+        for (int i = 0; i < A.Count; i++)
         {
-            for (int j = i + 1; j < A.Length; j++)
+            for (int j = i + 1; j < A.Count; j++)
             {
                 if (A[i] > A[j])
                 {
