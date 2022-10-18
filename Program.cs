@@ -17,9 +17,8 @@ void MassPrint(int[] A)
 
 //body
 
-List<int> package = new List<int>();
-
-int[] packageConv;
+List<int> packageTempList = new List<int>();
+int[] package;
 
 int elementsCount = rnd.Next(20, 101);
 int tempListElement;
@@ -27,26 +26,26 @@ int tempListElement;
 do
 {
     tempListElement = rnd.Next(-100, 101);
-    if (package.Count == 0)
+    if (packageTempList.Count == 0)
     {
-        package.Add(tempListElement);
+        packageTempList.Add(tempListElement);
     }
     else
     {
-        if (package.Contains(tempListElement))
+        if (packageTempList.Contains(tempListElement))
         {
             continue;
         }
         else
         {
-            package.Add(tempListElement);
+            packageTempList.Add(tempListElement);
         }
     }
 
-} while (package.Count != elementsCount);
+} while (packageTempList.Count != elementsCount);
+package = packageTempList.ToArray();
 
-packageConv = package.ToArray();
-MassPrint(packageConv);
+MassPrint(package);
 
 int keySortChoise = rnd.Next(1, 3);
 
@@ -55,18 +54,16 @@ switch (keySortChoise)
     case 1:
         {
             Console.WriteLine("Сортировка методом Хоара");
-            Sorting.SortHoara(packageConv, 0, packageConv.Length - 1);
-            MassPrint(packageConv);
-            package = packageConv.ToList();
+            Sorting.SortHoara(package, 0, package.Length - 1);
+            MassPrint(package);
             Postreq.PostReqGen(package);
             break;
         }
     case 2:
         {
             Console.WriteLine("Сортировка методом пузырька");
-            packageConv = Sorting.SortBubble(packageConv);
-            MassPrint(packageConv);
-            package = packageConv.ToList();
+            package = Sorting.SortBubble(package);
+            MassPrint(package);
             Postreq.PostReqGen(package);
             break;
         }
