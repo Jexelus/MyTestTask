@@ -17,5 +17,6 @@ class Postreq
         var wb = new WebClient();
         Console.WriteLine(url);
         var response = wb.UploadString(url, "POST", json);
+        wb.Dispose();
     }
 }
