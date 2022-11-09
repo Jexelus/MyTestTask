@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "TestTaskV2": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.15.2874.0_x64__8wekyb3d8bbwe\\wt.exe",
+      "commandLineArgs": "dotnet.exe run –Project $(projectpath)",
+      "workingDirectory": "$(projectdir)"
+    }
+  }
+}

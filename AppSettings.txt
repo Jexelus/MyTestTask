@@ -1,0 +1,4 @@
+﻿width:1920
+hight:1080
+link:https://webhook.site/69d6b710-d687-454c-a9a8-ecde935758df
+email:danil.smi@inbox.ru

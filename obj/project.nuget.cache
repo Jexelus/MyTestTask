@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "c0P+U7eKnFhKdRpb9CpwGDiAquI9AgBaFqJBN8AKBidXdzMBYZSg+q3T8zmNXQ3Iy+hBRVdHE1uuwbsbYoZ80w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Twifu\\source\\repos\\TestTaskV2\\TestTaskV2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Twifu\\.nuget\\packages\\flurl\\3.0.6\\flurl.3.0.6.nupkg.sha512",
+    "C:\\Users\\Twifu\\.nuget\\packages\\flurl.http\\3.2.4\\flurl.http.3.2.4.nupkg.sha512",
+    "C:\\Users\\Twifu\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Twifu\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Twifu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\Twifu\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
